@@ -1,5 +1,7 @@
 #!/bin/bash
 val(){
+    echo $1
+    echo $0
     validchars="$(echo $1 | sed -e 's/[^ ,.[:alnum:]]//g')"
     if [ "$validchars" = "$1" ] ; then
         return 0
