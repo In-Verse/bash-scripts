@@ -16,4 +16,8 @@ funwheel () {
 	done
 }
 
-funwheel
+continue=true
+until [ $continue = false ]; do
+	funwheel
+	sleep $1
+done
