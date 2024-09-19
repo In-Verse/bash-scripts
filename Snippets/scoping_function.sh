@@ -1,4 +1,6 @@
 #!/bin/bash
+## Purpose: Show how scope works in bash with a function
+## Usage: scoping_function.sh
 
 AssignMe(){
 	ME="Kerouac"

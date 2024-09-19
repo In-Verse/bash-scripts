@@ -1,8 +1,11 @@
 #!/bin/bash
-# What are you, a Windows user?
+## Purpose: Remove vowels from a string
+## Usage: remove_vowels.sh
+## TODO:
+##  - Add user input
 
 string="What are you, a Windows user?"
-stringarr=(${string})
+stringarr=("${string}")
 new=""
 for (( i=0; i<${#stringarr[@]}; i++ )); do
   if [ ${#stringarr[i]} -eq 1 ]; then 
